@@ -5,14 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
 
+    <ImageView
+        android:layout_width="550px"
+        android:layout_height="296px"
+        android:layout_gravity="center"
+        android:src="@drawable/pasta"
+        android:layout_marginTop="30dp"/>
     <TextView
         android:layout_marginTop="80dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Type food or drink here"/>
+        android:text="Type food or drink here"
+        android:textSize="15dp"/>
     <EditText
+        android:id="@+id/et_food_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="omelet"/>
@@ -23,15 +32,20 @@
         android:gravity="center"
         android:textSize="18dp"/>
     <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Type ingredients (optional)"/>
-
+        android:text="Type ingredients separated by comma"
+        android:textSize="15dp"/>
     <EditText
+        android:id="@+id/et_ingredients_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="onions,garlic"/>
     <Button
+        android:id="@+id/btn_find"
+        android:layout_margin="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Find"
